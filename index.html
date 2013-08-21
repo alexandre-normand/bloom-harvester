@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>The Size of the Data Matters</title>
+<style>
+
+@import url(style.css?20120427);
+
+#chart {
+  margin-left: -40px;
+  height: 626px;
+}
+
+text {
+  font: 10px "Helvetica Neue";
+}
+
+.job {
+   font: 500 35px "Helvetica Neue";   
+   stroke:#000000;
+   stroke-width:0.045em;
+   stroke-linecap:round;
+   stroke-linejoin:middle;   
+   stroke-opacity:0.70;"
+}
+
+.bar {
+  stroke: #000;
+  opacity: 0.6;
+}
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.label {
+  fill: #777;
+}
+
+.timestamp.label {
+  font: 500 150pt "Helvetica Neue";
+  fill: #ddd;
+}
+
+.timestamp.label.active {
+  fill: #aaa;
+}
+
+.table.label {
+  font: 500 35px "Helvetica Neue";
+  fill: #aaa;
+  opacity: 0.70;
+  stroke:#000000;
+  stroke-width:0.055em;
+  stroke-linecap:round;
+  stroke-linejoin:middle;
+  stroke-opacity:0.70;"
+}
+
+.table.label.active {
+  fill: #aaa;
+}
+
+.timestamp.namelabel.active {
+  fill: #aaa;
+}
+
+.table.namelabel {
+  font: 500 16px "Helvetica Neue";
+  fill: #aaa;
+  opacity: 0.65;
+  stroke:#000000;
+  stroke-width:0.03em;
+  stroke-linecap:round;
+  stroke-linejoin:middle;
+  stroke-opacity:0.75;"
+}
+
+.table.label.active {
+  fill: #aaa;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+  cursor: ew-resize;
+}
+
+aside.footer {
+
+}
+
+</style>
+
+<br/>
+<br/>
+
+<header>
+  <aside>One Day in Q2 2013</aside>
+</header>
+ 
+<h1>Action Scene</h1>
+
+<p id="chart"></p>
+
+<br/><br/>
+<footer>
+  <p class="attribution">Source: <a href="https://github.com/alexandre-normand">Alex Normand</a>, Data Services.
+  <aside>Big Data...Moving.</aside>
+</footer>
+
+
+
+<script type="text/javascript" src="./jquery-2.0.2.min.js"></script>
+<script src="./d3.v2.js?2.8.1"></script>
+<script src="./bloom-harvester.js"></script>
